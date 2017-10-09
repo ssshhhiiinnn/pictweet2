@@ -6,6 +6,7 @@
       <%= simple_format(tweet.text) %>
       <span class="name"><%= tweet.name %></span>
     </div>
-
   <% end %>
+  <%= paginate(@tweets) %>
+
 </div>
