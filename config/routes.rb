@@ -8,4 +8,6 @@ Rails.application.routes.draw do
   delete 'tweets/:id'     => 'tweets#destroy'
   get 'tweets/:id:/edit'  => 'tweets#edit'
 
+
+  
 end
