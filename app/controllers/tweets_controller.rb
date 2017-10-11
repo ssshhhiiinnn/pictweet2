@@ -19,6 +19,10 @@ class TweetsController < ApplicationController
     binding.pry
   end
 
+  def show
+    @tweet = Tweet.find(params[:id])
+  end
+
   private
   def tweet_params
     params.permit(:image, :text)
